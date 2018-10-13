@@ -1,6 +1,8 @@
 package com.hello.world;
 
 import com.hello.HelloWorld;
+import com.hello.modules.hello.HelloInterface;
+import com.hello.modules.hello.HelloModules;
 import com.httpstuff.ApacheTest;
 import com.ssssht.PssstHelloWorld;
 
@@ -14,5 +16,10 @@ public class HelloWorldClient {
 
         ApacheTest apacheTest = new ApacheTest();
         System.out.println( "3: " + apacheTest.accessHttp());
+
+        HelloModules.doSomething();
+
+        HelloInterface helloInterface = new HelloModules();
+        System.out.println( "4: " + helloInterface.sayHello());
     }
 }
