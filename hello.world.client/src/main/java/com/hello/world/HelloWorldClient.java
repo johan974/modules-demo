@@ -1,14 +1,18 @@
 package com.hello.world;
 
 import com.hello.HelloWorld;
+import com.httpstuff.ApacheTest;
 import com.ssssht.PssstHelloWorld;
 
 public class HelloWorldClient {
     public static void main (String arg[]) {
         HelloWorld hello = new HelloWorld();
-        System.out.println(hello.sayHelloWorld());
+        System.out.println( "1: " + hello.sayHelloWorld());
 
         PssstHelloWorld pssstHelloWorld = new PssstHelloWorld();
-        System.out.println( pssstHelloWorld.sayHelloWorld());
+        System.out.println( "2: " + pssstHelloWorld.sayHelloWorld());
+
+        ApacheTest apacheTest = new ApacheTest();
+        System.out.println( "3: " + apacheTest.accessHttp());
     }
 }

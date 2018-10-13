@@ -43,6 +43,9 @@
                     </execution>
                 </executions>
                 <configuration>
+                    <compilerArgs>
+                        <arg>--add-modules=java.xml.bind</arg>
+                    </compilerArgs>
                     <source>9</source>
                     <target>9</target>
                 </configuration>

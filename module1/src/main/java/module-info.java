@@ -1,5 +1,7 @@
 module module1 {
+    requires httpclient;
+    requires httpcore;
     exports com.hello;
-    // If commenting the next export, there is a compiler error: PssstHelloWorld unknown
     exports com.ssssht;
+    exports com.httpstuff;
 }
